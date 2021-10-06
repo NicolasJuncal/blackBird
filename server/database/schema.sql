@@ -41,5 +41,6 @@ create table confirmation (
   id serial primary key,
   doctor_id int,
   date timestamp,
-  confirmation_code text
+  confirmation_code text,
+  pending text
 );

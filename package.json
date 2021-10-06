@@ -4,9 +4,11 @@
 	"description": "",
 	"main": "server.js",
 	"dependencies": {
+		"@sendgrid/mail": "^7.4.7",
 		"auth0": "^2.36.2",
 		"axios": "^0.22.0",
 		"dotenv": "^10.0.0",
+		"emailjs-com": "^3.2.0",
 		"express": "^4.17.1",
 		"express-openid-connect": "^2.5.1",
 		"pg": "^8.7.1",
@@ -16,7 +18,8 @@
 		"nodemon": "^2.0.13"
 	},
 	"scripts": {
-		"start": "nodemon server/server.js"
+		"start": "nodemon server/server.js",
+		"console": "node server/db_console/db_console.js"
 	},
 	"author": "",
 	"license": "ISC"
